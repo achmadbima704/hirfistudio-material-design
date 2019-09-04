@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<!-- stylesheet -->
+	<link rel="stylesheet" href="node_modules/materialize-css/dist/css/materialize.min.css">
+	<link rel="stylesheet" href="node_modules/material-design-icons/iconfont/material-icons.css">
+	<link rel="stylesheet" href="css/custom.css">
+	<!-- stylesheet -->
+
+	<title>Hirfistudio</title>
+</head>
+
+<body>
+
+	<div class="navbar-fixed">
+		<nav>
+			<div class="nav-wrapper indigo">
+				<div class="container">
+					<a href="#" class="brand-logo">Hirfistudio</a>
+					<a href="#" class="sidenav-trigger waves-effect waves-light" data-target="mobile-links"><i
+							class="material-icons">menu</i></a>
+					<ul class="right hide-on-med-and-down">
+						<li><a href="#" class="waves-effect waves-light">Gajian</a></li>
+						<li><a href="#" class="waves-effect waves-light">Cuti</a></li>
+						<li><a href="#" class="waves-effect waves-light">Lembur</a></li>
+						<li><a href="#" class="waves-effect waves-light">Pinjam Alat</a></li>
+						<li><a class="dropdown-trigger" href="#" data-target="dropdown-laporan">Laporan<i
+									class="material-icons right">arrow_drop_down</i></a></li>
+						<ul id='dropdown-laporan' class='dropdown-content'>
+							<li><a href="#">Cuti</a></li>
+							<li><a href="#">Gaji</a></li>
+							<li><a href="#">Lembur</a></li>
+							<li><a href="#">Survey</a></li>
+						</ul>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</div>
+
+	<ul class="sidenav" id="mobile-links">
+		<li><a href="#" class="waves-effect waves-light">Gajian</a></li>
+		<li><a href="#" class="waves-effect waves-light">Cuti</a></li>
+		<li><a href="#" class="waves-effect waves-light">Lembur</a></li>
+		<li><a href="#" class="waves-effect waves-light">Pinjam Alat</a></li>
+		<li><a class="dropdown-trigger waves-effect waves-light" href="#!" data-target="m-dropdown-laporan">Laporan<i
+					class="material-icons right">arrow_drop_down</i></a></li>
+		<ul id='m-dropdown-laporan' class='dropdown-content'>
+			<li><a href="#" class="waves-effect waves-light">Cuti</a></li>
+			<li><a href="#" class="waves-effect waves-light">Gaji</a></li>
+			<li><a href="#" class="waves-effect waves-light">Lembur</a></li>
+			<li><a href="#" class="waves-effect waves-light">Survey</a></li>
+		</ul>
+	</ul>
+
+	<div class="container">
+		<div class="row">
+			<div class="section">
+				<h4>Form Cuti</h4>
+			</div>
+			<div class="divider"></div>
+			<form class="col s12">
+				<div class="row">
+					<div class="input-field col s12">
+						<input id="tgl_cuti" type="text" name="tgl_cuti" class="datepicker validate">
+						<label for="tgl_cuti">Tanggal Cuti</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="input-field col s12">
+						<input id="lama_hari" type="number" name="lama_hari" class="validate" min="1" max="12">
+						<label for="lama_hari">Lama Hari</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="input-field col s6">
+						<select name="jenis_cuti" id="jenis_cuti" class="validate">
+							<option value="Tahunan">Tahunan</option>
+							<option value="Survey">Survey</option>
+						</select>
+						<label for="jenis_cuti">Lama Hari</label>
+					</div>
+					<div class="input-field col s6">
+						<select name="pengganti_tugas" id="pengganti_tugas" class="validate">
+							<option value="Dite Aji">Dite Aji</option>
+							<option value="Hasan Basri">Hasan Basri</option>
+						</select>
+						<label for="pengganti_tugas">Lama Hari</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="input-field col s12">
+						<textarea id="keterangan" name="keterangan" class="materialize-textarea"></textarea>
+						<label for="keterangan">Keterangan</label>
+					</div>
+				</div>
+				<button class="waves-effect waves-teal btn blue darken-4 white-text text-lighten-4">Simpan</button>
+			</form>
+		</div>
+	</div>
+
+	<script src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>

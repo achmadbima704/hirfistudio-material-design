@@ -1,0 +1,23 @@
+{
+  "name": "hirfistudio-material-design",
+  "version": "1.0.0",
+  "description": "template alternatif user side hirfistudio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/achmadbima704/hirfistudio-material-design.git"
+  },
+  "author": "achmadbima704",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/achmadbima704/hirfistudio-material-design/issues"
+  },
+  "homepage": "https://github.com/achmadbima704/hirfistudio-material-design#readme",
+  "dependencies": {
+    "material-design-icons": "^3.0.1",
+    "materialize-css": "^1.0.0-rc.2"
+  }
+}
